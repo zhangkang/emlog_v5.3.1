@@ -56,9 +56,9 @@ require_once View::getView('function');
                         <?php blog_navi();?>
                     </div>
                     <!-- 搜索 -->
-                    <a href="<?php echo BLOG_URL.'search.html' ?>" class="navbar-search">
+                   <!--  <a href="<?php echo BLOG_URL.'search.html' ?>" class="navbar-search">
                         <span class="icon-search"></span>
-                    </a>
+                    </a> -->
 
                     <!-- 移动端 -->
                     <div class="navbar-mobile-menu" >

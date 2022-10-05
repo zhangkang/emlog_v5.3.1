@@ -16,7 +16,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 		.STYLE9 {font-size: 16px}
 		.STYLE12 { font-size: 100px; font-family: "微软雅黑"; }
 	</style>
-	<script src="https://blog.dyboy.cn/content/templates/dy_monkey/js/jquery.min.js"></script>
+	<script src="//apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 </head>
 	<body>
 	<span class="STYLE12"> :(</span>
@@ -25,7 +25,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 	<p class="STYLE7">　　<span class="STYLE9">ErrorCode： 404</span></p>
 	<script language="javascript" type="text/javascript">
 		var i = 3;
-		setTimeout(function () { this.location.href = "https://blog.dyboy.cn" }, 3000);//定时器3s
+		setTimeout(function () { this.location.href = "https://www.zhangkang.org" }, 3000);//定时器3s
 		setInterval('update_time(i)',1000);
 		function update_time(time){ time-=1;i=time;$(".time_s").text(time); }
 	    

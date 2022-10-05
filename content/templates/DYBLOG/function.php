@@ -16,14 +16,24 @@ if(isset($_GET['qqnum'])){
 function myGravatar($email,$role='' ,$s = 50, $d = 'wavatar', $g = 'g') {
     if(!empty($role)){ return $role; }
     $hash = md5($email);
-    $avatar = "https://secure.gravatar.com/avatar/$hash?s=$s&d=$d&r=$g";
+    $avatar = "https://dn-qiniu-avatar.qbox.me/avatar/$hash?s=$s&d=$d&r=$g";
     return $avatar;
 }
 
 //获取QQ头像
 function getqqtx($qq){
-    $url="//q.qlogo.cn/headimg_dl?dst_uin=$qq&spec=3";
-    return $url;
+    $ssud=explode("@",$qq,2);
+    if($ssud[1]!=""){
+        if($ssud[1]=='qq.com'){
+            $url="//q.qlogo.cn/headimg_dl?dst_uin=$qq&spec=3";
+            return $url; 
+        }else{ 
+            return MyGravatar($qq); 
+        }
+    }
+    else{
+        return MyGravatar($qq); 
+    }
 }
 
 //获取QQ信息

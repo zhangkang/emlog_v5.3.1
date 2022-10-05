@@ -37,17 +37,28 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 
 <div class="main-content index-page clearfix">
 	<!-- 微语 -->
-	<?php if(blog_tool_ishome()):?>
-		<div class="noticeHead">
+	<?php 
+	//if(blog_tool_ishome()):
+	?>
+	<!-- 	<div class="noticeHead">
 			<div style="position: relative;height: 26px;overflow: hidden;">
-		        <ul class="ul1">
-		            <?php admin_talk(); ?>
-		        </ul>
+		        <ul class="ul1"> -->
+		            <?php 
+					//admin_talk(); ?>
+		  <!--       </ul>
 		        <div style="position: absolute;top: 5px;left:8px" class="fa fa-bullhorn"></div>div>
 		    </div>
-		</div>
-	<?php endif;?>
-	
+		</div> -->
+	<?php 
+	//endif;
+	?>
+	<div class="noticeHead">
+			<div style="position: relative;height: 26px;overflow: hidden;text-align: right;padding-right:12px;">
+					<div method="get" class="search_form">
+						<input class="search_input" type="text" placeholder="请输入关键字搜索~"><a href="./?keyword=" class="search_a_btn"><span class="icon-search"></span></a>
+					</div>
+			</div>
+	</div>
 	<!-- 文章列表 -->
     <div class="post-lists">
     	<!-- 文章列钩子 -->
@@ -78,7 +89,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
             					<div class="item-meta">
             						<i class="fa fa-calendar"></i> <?php echo gmdate('Y-n-j', $value['date']); ?>
             						<i class="fa fa-eye"></i> <?php echo $value['views']; ?>
-            						<i class="fa fa-comments"></i> <a href="https://mkblog.cn/1836/#comments"><?php echo $value['comnum']; ?></a>
+            						<i class="fa fa-comments"></i> <a href="./#comments"><?php echo $value['comnum']; ?></a>
             					</div>
             				</div>
             			</div>
@@ -93,7 +104,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 				<h1>Not Found</h1>
 				<p>抱歉，本破站没有</p>
 				<a href="/search.html" title="有本事点我试试？"><img src="<?php echo TEMPLATE_URL?>images/404.jpg"></a><br/>
-				<a href="/search.html" title="点击去搜索看看"><button>搜索一下</button></a>
+				<a href="//www.baidu.com" title="点击去搜索看看" target="_blank"><button>那就去百度呗</button></a>
 			</div>
 			
 		<?php endif;?>

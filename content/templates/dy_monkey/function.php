@@ -314,7 +314,7 @@ function pages_links(){
 function myGravatar($email,$role='' ,$s = 50, $d = 'wavatar', $g = 'g') {
     if(!empty($role)){ return $role; }
     $hash = md5($email);
-    $avatar = "https://secure.gravatar.com/avatar/$hash?s=$s&d=$d&r=$g";
+    $avatar = "https://dn-qiniu-avatar.qbox.me/avatar/$hash?s=$s&d=$d&r=$g";
     return $avatar;
 }
 

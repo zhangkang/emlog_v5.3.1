@@ -29,7 +29,7 @@ function commentTool(){
     	 $(".com_tips").text("用心评论收获价值~");
     });
     // 监听评论状态
-    $("#commentform").on("submit",function() {
+    $("#commentform").on("submit",function(event) {
 		event.preventDefault();
         if($("#comment").val()==""){
             alert("亲，请填写评论内容哦~");
@@ -65,6 +65,21 @@ function searchTool(){
 		}
 		
 	})
+}
+
+function search(){
+	$(".search_input").blur(function(){
+		var search_val = $(".search_input").val();
+		$(".search_a_btn").attr('href','./?keyword='+search_val);
+	})
+	
+	$('.search_input').bind('keypress', function(event) {
+		if(event.keyCode=="13"){
+			console.log("监听回车啦");
+			var search_val = $(".search_input").val();
+			location.href='./?keyword='+search_val;
+		}
+	});
 }
 
 /**
@@ -158,6 +173,7 @@ $(function(){
 	commentTool();
 	// 搜索
 	searchTool();
+	search();
 	// 图片预览
 	$('#post-content img').parent('a').attr('data-fancybox','gallery');
 	
@@ -192,4 +208,5 @@ $(document).on('pjax:complete', function() {
 	// admin_talk();
     commentTool();
     searchTool();
+	search();
 });

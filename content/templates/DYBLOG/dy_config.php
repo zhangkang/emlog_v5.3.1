@@ -11,13 +11,13 @@
 
 $web_config = [
 	// 站长QQ号码
-	'admin_qq'		 => 		'1099718640',
+	'admin_qq'		 => 		'309505090',
 	// 站长后台设置的邮箱
-	'admin_email'	 => 		'1099718640@qq.com',
+	'admin_email'	 => 		'i@zhangkang.org',
 	// Github地址
-	'github_url'	 =>			'https://github.com/dyboy2017',
+	'github_url'	 =>			'https://github.com/zhangkang',
 	// 邮我地址
-	'email_me'		 =>			'http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=XzsmPTAmbW9uaB8uLnE8MDI'
+	'email_me'		 =>			'https://github.com/zhangkang'
 ];
 
 ?>

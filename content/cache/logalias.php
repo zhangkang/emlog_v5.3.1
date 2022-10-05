@@ -1,0 +1,1 @@
+<?php exit;//a:1:{i:2;s:6:"resume";}

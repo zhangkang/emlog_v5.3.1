@@ -1,0 +1,28 @@
+.Articleewm{
+	z-index: 999;
+    right: 20px;
+    top: 20px;
+  	text-align: center;
+  	border: 1px solid #d9dadc;
+  	color: #717375;
+  	display:block;
+  	position: fixed;
+  	background:#FFFFFF;
+
+}
+.Articleewm a{
+	font-size:10px;
+}
+.Articleewm img{  	
+  	width:136px;
+}
+
+#qrcode{  	
+  	width:136px;
+  	height:136px;
+  	padding:10px;
+}
+@media screen and (max-width: 780px){
+  .Articleewm{display:none;}
+	#Articleewm{display:none;}	
+}

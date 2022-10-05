@@ -1,0 +1,31 @@
+.popup{background-color:#f8f8f8;box-shadow:0 2px 2px 0 rgba(0,0,0,.3)}.popup-content{padding:20px 20px 30px 20px}.popup-overlay{background-color:rgba(0,0,0,.3)}
+/** * CSS for jQuery plugin 'popup' v.1.0.0 * Copyright (©) by Konstantin Kachurenko <konstantin.kachurenko@gmail.com> | http://konstantin-kachurenko.github.io | The MIT License (MIT) http://opensource.org/licenses/MIT */
+.popup{position:fixed;top:50%;left:50%;width:auto;height:auto;min-width:320px;max-width:100%;max-height:100%;visibility:hidden;opacity:0;overflow:auto;-webkit-box-sizing:border-box;box-sizing:border-box}
+.popup,.popup-overlay{z-index:0;-webkit-transform-style:flat;transform-style:flat;-webkit-transition:opacity .3s ease,left .5s,top .5s,transform .5s,-webkit-transform .5s;-ms-transition:opacity .3s ease,left .5s,top .5s,transform .5s,-ms-transform .5s;-o-transition:opacity .3s ease,left .5s,top .5s,transform .5s,-o-transform .5s;transition:opacity .3s ease,left .5s,top .5s,transform .5s,-webkit-transform .5s,-ms-transform .5s,-o-transform .5s}
+.popup-content{text-align:center;position:relative}
+.popup-overlay{position:fixed;visibility:hidden;opacity:0;top:-25%;left:0;width:100%;height:150%;background:rgba(0,0,0,.7)}
+.popup-show{visibility:visible;opacity:1;z-index:2000}
+/** * Effects: * .effect-fade-scale, .effect-slide-left, .effect-slide-right, * .effect-slide-top, .effect-newspaper, .effect-sticky */
+.popup.effect-fade-scale{-webkit-transform:scale(0.7);-ms-transform:scale(0.7);-o-transform:scale(0.7);transform:scale(0.7)}
+.popup-show.effect-fade-scale{-webkit-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1)}
+.popup.effect-slide-left{left:20%}
+.popup.effect-slide-right{left:80%}
+.popup-show.effect-slide-right,.popup-show.effect-slide-left{left:50%}
+.popup.effect-slide-top{top:20%}
+.popup-show.effect-slide-top{top:50%}
+.popup.effect-newspaper{-webkit-transform:scale(0) rotate(720deg);-ms-transform:scale(0) rotate(720deg);-o-transform:scale(0) rotate(720deg);transform:scale(0) rotate(720deg)}
+.popup-show.effect-newspaper{-webkit-transform:scale(1) rotate(0deg);-ms-transform:scale(1) rotate(0deg);-o-transform:scale(1) rotate(0deg);transform:scale(1) rotate(0deg)}
+.popup.effect-sticky{top:-100%}
+.popup-show.effect-sticky{top:0;margin-top:0 !important}
+#social{margin:12px -20px 12px}
+.social-main{position:relative;margin:0 auto;width:283px}
+.social-main a{float:left;color:#fff !important;line-height:35px;text-align:center;border-radius:2px}
+.social-main a:hover{background:#878787;color:#fff;transition:all .2s ease-in 0s}
+.like a{background:#f40;width:140px;display:block;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+.share-s a{background:#ecb842;width:140px;display:block;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+.social-main i{color:#fff;font-style:normal;margin:0 5px 0 0}
+.shang-p a{position:absolute;left:115px;top:-11px;background:#7ab951;width:50px;height:50px;font-size:18px;font-weight:600;line-height:46px;border:4px solid #fff;border-radius:40px}
+.shang-main input{height:auto;max-width:100%;vertical-align:middle;display:block}
+.shang-main img{height:auto;max-width:100%;margin:0 auto;vertical-align:middle;display:block}
+.shang-main h4{text-align:center}
+.zanzhu{margin-top:-5px!important;padding-bottom:5px;border-bottom:1px solid #eee;color:#666;font-weight:bold;font-size:18px;}

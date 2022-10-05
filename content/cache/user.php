@@ -1,0 +1,1 @@
+<?php exit;//a:1:{i:1;a:8:{s:5:"photo";a:0:{}s:6:"avatar";s:0:"";s:9:"name_orig";s:9:"zhangkang";s:4:"name";s:9:"zhangkang";s:4:"mail";s:0:"";s:3:"des";s:129:"当你想在你的代码中找到一个错误时，这很难；当你认为你的代码是不会有错误时，这就更难了。";s:7:"ischeck";s:1:"n";s:4:"role";s:5:"admin";}}

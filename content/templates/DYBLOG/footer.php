@@ -42,7 +42,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 </div>
 
 <!-- JavaScript -->
-<script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="//api.top15.cn/static/script/jquery.prettify.js"></script>
 <script src="<?php echo TEMPLATE_URL?>script/main.js?v1.0.3"></script>

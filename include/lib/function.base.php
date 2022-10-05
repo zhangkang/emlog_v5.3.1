@@ -647,7 +647,7 @@ function chImageSize($img, $max_w, $max_h) {
  */
 function getGravatar($email, $s = 40, $d = 'mm', $g = 'g') {
 	$hash = md5($email);
-	$avatar = "https://secure.gravatar.com/avatar/$hash?s=$s&d=$d&r=$g";
+	$avatar = "https://dn-qiniu-avatar.qbox.me/avatar/$hash?s=$s&d=$d&r=$g";
 	return $avatar;
 }
 

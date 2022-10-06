@@ -40,17 +40,28 @@ function commentTool(){
             type: 'POST',
             url: $("#commentform").attr("action"),
             data: a,
-			async:false,	// 同步
+		    async:false,	// 同步
             success: function(a) {
                 $(".com_tips").text("感谢您的金玉良言~");
                 if($(".com_tips").text()=="感谢您的金玉良言~"){
-                    $.pjax.reload('#dyblog_pjax', {fragment: '#dyblog_pjax',timeout: 8000})
+					if(a.search("评论失败")!=-1){
+						$(".com_tips").text("评论失败,原因自己猜");
+					}
+					else{
+						$(".com_tips").text("评论成功,请等待管理员审核");
+						$(".loading").css("display", "block");
+						setTimeout(() => {
+							$(".loading").css("display", "none");
+							$.pjax.reload('#dyblog_pjax', {fragment: '#dyblog_pjax',timeout: 8000})
+						}, 1500);
+						
+					}
                 }
             },
             false: function(e){
             	 $(".com_tips").text(e);
             }
-        });
+        }); 
     });
 }
 
